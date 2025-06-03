@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="full-center">
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Sinai University Logo" class="logo">
+            </div>
+            <h2>Student Profile</h2>
+
+            <div class="info">
+                <table class="profile-table">
+                    <tr><td><strong>Name:</strong></td><td>Basmala Saeed Mohamed Ali Mohamed</td></tr>
+                    <tr><td><strong>Nationality:</strong></td><td>Egyptian</td></tr>
+                    <tr><td><strong>National ID:</strong></td><td>30702011901262</td></tr>
+                    <tr><td><strong>Gender:</strong></td><td>Female</td></tr>
+                    <tr><td><strong>Religion:</strong></td><td>Muslim</td></tr>
+                    <tr><td><strong>Birth Date:</strong></td><td>01-02-2007</td></tr>
+                    <tr><td><strong>Faculty:</strong></td><td>Faculty of Physical Therapy</td></tr>
+                    <tr><td><strong>Campus:</strong></td><td>Sinai Kantara</td></tr>
+                </table>
+            </div>
+
+            <div class="grades">
+                <h2>Grades</h2>
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr><td>Psychology 2</td><td>A+</td></tr>
+                    <tr><td>Biochemistry 2</td><td>A+</td></tr>
+                    <tr><td>Histology 2</td><td>A-</td></tr>
+                    <tr><td>Physiology 2</td><td>A-</td></tr>
+                    <tr><td>Biophysics 2</td><td>B+</td></tr>
+                    <tr><td>Anatomy 2</td><td>B+</td></tr>
+                </table>
+            </div>
+            <div style="text-align:center; margin-top:20px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
