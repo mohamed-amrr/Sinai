@@ -1,0 +1,199 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.full-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-bg {
+    background: url('login_background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn, .google-btn, .apple-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #0a4b78;
+    color: white;
+}
+
+.google-btn {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #444;
+}
+
+.apple-btn {
+    background-color: black;
+    color: white;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+    justify-content: start;
+}
+
+.guest {
+    margin-top: 10px;
+    color: gold;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.container.large {
+    transform: scale(1.15);
+}
+
+.profile-table {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+}
+
+.profile-table td {
+    padding: 12px 18px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.info p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.grades table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.grades th, .grades td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.grades th {
+    background-color: #e3f2fd;
+}
+.login-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login-logo-img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .login-logo-img {
+        width: 120px;
+    }
+    .login-btn, .google-btn, .apple-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .input-group input {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-box {
+        padding: 15px;
+    }
+    .login-logo-img {
+        width: 100px;
+    }
+    .login-btn, .google-btn, .apple-btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+}

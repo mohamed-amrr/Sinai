@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sinai University</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-bg">
+        <div class="login-box">
+            <div class="login-logo">
+                <img src="{{ url_for('static', filename='logo.jpeg') }}" class="login-logo-img" alt="SU Logo">
+            </div>
+            {% if error %}<p class="error">{{ error }}</p>{% endif %}
+            <form method="post">
+                <div class="input-group">
+                    <input type="email" name="username" placeholder="Email " required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <label class="remember-me"><input type="checkbox" name="remember"> Remember Me</label>
+                <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
